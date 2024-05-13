@@ -419,7 +419,7 @@ export class LibraryItem extends React.Component<LibraryItemProps, LibraryItemSt
         //not ideal, but we set the state without setState here to avoid triggering a render so
         //that the item we just clicked will stay expanded.
         // @ts-ignore 
-        this.props.libraryContainer.state.shouldOverrideExpandedState = true
+        this.props.libraryContainer.state?.shouldOverrideExpandedState = true
     }
 
     onSectionIconClicked(event: any) {
